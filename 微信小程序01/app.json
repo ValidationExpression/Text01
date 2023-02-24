@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "pages/helloworld/helloworld",
+        "pages/scrollview/scrollview"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FF4500",
+        "navigationBarTitleText": "我的小程序",
+        "navigationBarTextStyle": "black",
+        "backgroundColor":"#FF4500"
+    },
+    "tabBar":{
+        "color":"#66666",
+        "selectedColor":"#4169E1",
+        "backgroundColor":"#FF4500",
+        "list":[{
+            "pagePath":"pages/helloworld/helloworld",
+            "text":"首页",
+            "iconPath":"images/icon1.png",
+            "selectedIconPath":"images/icona1.png"
+            
+        },{
+            "pagePath":"pages/scrollview/scrollview",
+            "text":"列表"
+        }]
+
+
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

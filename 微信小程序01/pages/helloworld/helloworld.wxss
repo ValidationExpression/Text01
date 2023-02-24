@@ -1,0 +1,6 @@
+/*文件含义用于设置对于wxml文件中，文本组件的样式*/
+/*rpx是像素单位*/
+.txt1{
+    color: blueviolet;
+    font-size: 50rpx;
+}

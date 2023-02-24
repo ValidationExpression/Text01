@@ -1,0 +1,22 @@
+<!--描述文本內容-->
+<view class="container">
+    HelloWorld
+    <!--data-id="{{vid}}" 表示的是属性绑定的是(helloworld.js)中data的数据,用"{{ }}"-->
+<view class="txt1" data-id="{{vid}}">
+    <!--值绑定操作，对于(helloworld.js)中data的数据，用{{ }}-->
+    {{msg}}
+</view>
+
+<view >列表使用</view>
+<!-- 对列表的数据利用循环读取(wx:for="{{列表名}}"),循环范围是根据view的起始。-->
+<view wx:for="{{list}}" class="list_wrap" wx:key="index">
+    <!--可以设置此用于测试使用-->
+    <view class="title">标题名</view>
+     <view class="title1">{{item.name}}</view>
+     <!--对数据条件判断(wx:if="{{ }}")，条件判断时应连续使用(if else)-->
+     <view wx:if="{{item.age>=18}}">成年</view>
+     <view wx:else>未成年</view>
+</view>
+
+</view>
+

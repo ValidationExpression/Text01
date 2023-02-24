@@ -1,0 +1,26 @@
+/* pages/demo/demo.wxss */
+.title{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #ccc;
+  }
+  .form{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+   
+  .form input{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+      border-radius: 40px;
+  }
+  .form button{
+    border-radius: 40px;
+    background-color: #ccc;
+  
+  }

@@ -1,0 +1,12 @@
+<!--pages/demo/demo.wxml-->
+<view class="title">写入文件></view>
+
+<view class="form">
+    <!--监听输入的值-->
+    <input type="text" bindinput="inp" placeholder="请输入內容"></input>
+    <!--点击执行按钮，输入框內容写入到文件-->
+    <button bindtap="foo">提交</button>
+</view>
+<!--本地文件data.txt內容显示在此处-->
+<view>{{message}}</view>
+
