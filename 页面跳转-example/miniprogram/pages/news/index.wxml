@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view >
+    <text>news页面</text>
+    <!--双重跳转(注意.js文件的定义)-->
+    <button bindtap="handlClickToEven">
+        跳转user
+    </button>
+</view>

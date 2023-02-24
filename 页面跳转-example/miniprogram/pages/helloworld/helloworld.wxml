@@ -1,0 +1,9 @@
+<!--描述文本內容-->
+<view class="container">
+    页面一
+<!-- 实现页面跳转情况-->
+<!--（起始页面定义helloworld.js）bindtap="自定义"-->
+<button bindtap="handlClickToEven">跳转</button>
+
+</view>
+

@@ -1,0 +1,16 @@
+{
+    "pages": [
+        "pages/helloworld/helloworld",
+        "pages/news/index",
+        "pages/user/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FF4500",
+        "navigationBarTitleText": "我的小程序",
+        "navigationBarTextStyle": "black",
+        "backgroundColor":"#FF4500"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
