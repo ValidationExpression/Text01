@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <!-- scroll-y实现纵向滚动操作 -->
+  <!-- refresher-enabled下拉刷新 -->
+  <!-- bindrefresherrefresh刷新操作显示-->
+  <scroll-view scroll-y refresher-enabled refresher-triggered="{{refshStatus}}" bindrefresherrefresh="bindrefresherrefresh" bindscrolltolower="bindscrolltolower" class="scroll_wrap">
+ <view >列表使用</view>
+<!-- 对列表的数据利用循环读取(wx:for="{{列表名}}"),循环范围是根据view的起始。-->
+<view wx:for="{{list}}" class="list_wrap" wx:key="index">
+    <!--可以设置此用于测试使用-->
+     <view class="title">{{item.name}}</view>
+     <!--对数据条件判断(wx:if="{{ }}")，条件判断时应连续使用(if else)-->
+     <view wx:if="{{item.age>=18}}">成年</view>
+     <view wx:else>未成年</view>
+
+     <view class="tags_wrap">
+      <view wx:for="{{item.tags}}" wx:for-item="tagItem" wx:for-index="tagIndex" wx:key="tagIndex">{{tagItem}}</view>
+     </view>
+</view>
+</scroll-view>
+
+<view >表单-输入框</view>
+<!-- placeholder-class="p_name"设置样式-->
+<input type="text" value="{{nameVal}}" bindinput="handleInputEven" placeholder-class="p_name" placeholder="请输入姓名:"/>
+<input type="text" password="{{true}}" placeholder="请输入密码:" />
+<button bindtap="handleSubmitEven">提交</button>
+
+<view >表单-单选-性别</view>
+  <radio-group bindchange="handleChange2">
+    <!--如果要加样式可以添加一个view层-->
+    <view >
+    <label for="1">
+      <!--这里的value的值，是为了在传参的时候可以辨别-->
+      <radio id="1" value="1" />男
+    </label>
+    </view>
+
+    <view >
+    <label for="2">
+      <radio id="2" value="0" />女
+    </label>
+    </view>
+  </radio-group>
+
+<view >表单-多选-爱好</view>
+  <checkbox-group bindchange="handleChange">
+    <view wx:for="{{hobbyList}}">
+    <label for="{{item.id}}">
+      <checkbox id="{{item.id}}" value="{{item.id}}"/>{{item.name}}
+    </label>
+    </view>
+  </checkbox-group>
+</view>

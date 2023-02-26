@@ -1,0 +1,23 @@
+/**index.wxss**/
+.list_wrap{
+  width: 80%;
+  background-color: antiquewhite;
+  border-radius: 10rpx;
+  padding: 40rpx;
+  margin-bottom: 30px;
+}
+
+.tags_wrap{
+  display: flex;
+  border-top: 2rpx solid rebeccapurple;
+}
+.scroll_wrap{
+  margin-top: 50rpx;
+  height: 600rpx;
+  background-color: aqua;
+}
+
+/**设置输入框样式**/
+.p_name{
+  color: antiquewhite;
+}
